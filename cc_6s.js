@@ -44,5 +44,5 @@ function calculateSubscriptionCost(plan, months, discount = 0)  {
 
 calculateSubscriptionCost("Basic", 6, 10); // Expected output: "Total Cost: $50"
 calculateSubscriptionCost("Premium", 12, 0); // Expected output: "Total Cost: $240"
-console.log(`Subscription Cost 1: $${50}`);  // Results in $50
-console.log(`Subscription Cost 2: $${240}`);  // Results in $70
+console.log(`Subscription Price 1: $${50}`);  // Results in $50
+console.log(`Subscription Price 2: $${240}`);  // Results in $240
