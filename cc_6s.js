@@ -23,4 +23,15 @@ calculateSalesTax(500, 0.1)
 console.log(`SalesTax: $${7}`);  
 console.log(`SalesTax: $${50}`);
 
+// Task 3- Arrow Function
 
+calculateBonus = (salary, performanceRating) => salary * performanceRating;
+salary = 5000;
+performanceRating= "Excellent"// 20% bonus; 
+performanceRating="Good"// 10% of salary; 
+performanceRating= "Average"// 5% of salary
+calculateBonus(50000, "Excellent");
+calculateBonus(5000, "Excellent"); // Expected output: "Bonus: $1000"
+calculateBonus(7000, "Good");      // Expected output: "Bonus: $700"
+console.log(`Bonus: $${1000}`);  // Results in a Bonus of $1000
+console.log(`Bonus: $${700}`);  // Results in a Bonus of $700
