@@ -56,4 +56,4 @@ amount = 10000;
 convertCurrency(100, 1.1); // Expected output: "Converted Amount: $110.00"
 convertCurrency(250, 0.85); // Expected output: "Converted Amount: $212.50"
 console.log(`Currency $${110}`);  // Results in $110
-console.log(`Currency $${110}`);  // Results in $110
+console.log(`Currency $${212.50}`);  // Results in $212.50
