@@ -1,7 +1,7 @@
 //Task 1 - Business Profit Calculation
 
 function calculateNetProfit(sellingPrice, costPrice, unitsSold) {
-    return sellingPrice - costPrice*unitsSold ;
+    return sellingPrice - costPrice*unitsSold;
 }
 const sellingPrice = 20; 50
 const costPrice = 30; 70
