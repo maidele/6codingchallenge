@@ -35,3 +35,14 @@ calculateBonus(5000, "Excellent"); // Expected output: "Bonus: $1000"
 calculateBonus(7000, "Good");      // Expected output: "Bonus: $700"
 console.log(`Bonus: $${1000}`);  // Results in a Bonus of $1000
 console.log(`Bonus: $${700}`);  // Results in a Bonus of $700
+
+//Task 4- Subscription Pricing Model
+
+function calculateSubscriptionCost(plan, months, discount = 0)  {
+     return plan * months * discount;
+}
+
+calculateSubscriptionCost("Basic", 6, 10); // Expected output: "Total Cost: $50"
+calculateSubscriptionCost("Premium", 12, 0); // Expected output: "Total Cost: $240"
+console.log(`Subscription Cost 1: $${50}`);  // Results in $50
+console.log(`Subscription Cost 2: $${240}`);  // Results in $70
