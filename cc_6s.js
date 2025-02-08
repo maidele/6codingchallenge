@@ -1,12 +1,15 @@
 //Task 1 - Business Profit Calculation
 
 function calculateNetProfit(sellingPrice, costPrice, unitsSold) {
-    return sellingPrice - costPrice*unitsSold;
+    return (sellingPrice - costPrice) *unitsSold;
 }
-const sellingPrice = 20; 50
-const costPrice = 30; 70
-const unitsSold = 40; 200
-calculateNetProfit(20, 30, 100);
+const sellingPrice1 = 20
+const costPrice1= 30
+const unitsSold1 = 100
+const sellingPrice2 = 50
+const costPrice2= 70
+const unitsSold2 = 200
+calculateNetProfit1(20, 30, 100);
 calculateNetProfit(50, 70, 200);
 console.log(`Profit: $${1000}`);  // Results in a profit of $1000
 console.log(`Profit: $${4000}`);  // Results in a profit of $4000
@@ -57,3 +60,5 @@ convertCurrency(100, 1.1); // Expected output: "Converted Amount: $110.00"
 convertCurrency(250, 0.85); // Expected output: "Converted Amount: $212.50"
 console.log(`Currency $${110}`);  // Results in $110
 console.log(`Currency $${212.50}`);  // Results in $212.50
+
+//Task 6-
