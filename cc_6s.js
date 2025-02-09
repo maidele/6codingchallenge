@@ -17,15 +17,21 @@ console.log(`Profit: $${profitAmount2}`);  // Results in a profit of $4000
 
 // Task 2- Sales Tax Computation
 
-function calculateSalesTax(Amount, taxRate) {
-    return Amount * taxRate;
+function calculateSalesTax(amount, taxRate) {
+    return amount * taxRate;
 }
-totalAmount = 100; 500
-const taxRate = 0.07; 0.1 
-const tax = calculateSalesTax(100, 0.07);
+const totalAmount1 = 100;
+const taxRate1 = 0.07; 
+let salesTax1=
+calculateSalesTax(100, 0.07);
+console.log(`SalesTax: $${salesTax1}`);  
+
+const totalAmount2 =  500
+const taxRate2 = 0.1
+let salesTax2=
 calculateSalesTax(500, 0.1)
-console.log(`SalesTax: $${7}`);  
-console.log(`SalesTax: $${50}`);
+console.log(`SalesTax: $${salesTax2}`);  
+
 
 // Task 3- Arrow Function
 
