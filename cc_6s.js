@@ -24,13 +24,13 @@ const totalAmount1 = 100;
 const taxRate1 = 0.07; 
 let salesTax1=
 calculateSalesTax(100, 0.07);
-console.log(`SalesTax: $${salesTax1}`);  
+console.log(`SalesTax: $${salesTax1}`); // Expected output: "Sales Tax: $7"
 
 const totalAmount2 =  500
 const taxRate2 = 0.1
 let salesTax2=
 calculateSalesTax(500, 0.1)
-console.log(`SalesTax: $${salesTax2}`);  
+console.log(`SalesTax: $${salesTax2}`); // Expected output: "Sales Tax: $50"
 
 
 // Task 3- Arrow Function
