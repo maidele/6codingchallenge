@@ -58,22 +58,16 @@ console.log(`Bonus: $${calculateBonus2}`);  // Results in a Bonus of $1000
 
 //Task 4- Subscription Pricing Model
 
-function calculateSubscriptionCost(plan, months, discount = 0)  {
-     return plan * months * discount;
-}
+function calculateSubscriptionCost(plan, months, discount = 0) {
 
-calculateSubscriptionCost("Basic", 6, 10); // Expected output: "Total Cost: $50"
-calculateSubscriptionCost("Premium", 12, 0); // Expected output: "Total Cost: $240"
-console.log(`Subscription Price 1: $${50}`);  // Results in $50
-console.log(`Subscription Price 2: $${240}`);  // Results in $240
+    const planRates = { "Basic": 10, "Premium": 20, "Enterprise": 50 };
+    
+    return (planRates[plan] * months) - discount;
+    
+    }
+let subscriptionCost1= calculateSubscriptionCost("Basic", 6, 10); // Expected output: "Total Cost: $50"
+console.log(`Subscription Price 1: $${subscriptionCost1}`);  // Results in $50
+let subscriptionCost2= calculateSubscriptionCost ("Premium", 12, 0); // Expected output: "Total Cost: $240"
+console.log(`Subscription Price 2: $${subscriptionCost2}`);  // Results in $240
 
-//Task 5- Currency Conversion
 
-function convertCurrency(amount, exchangeRate)  {
-    return amount, exchangeRate;
-}
-amount = 10000;
-convertCurrency(100, 1.1); // Expected output: "Converted Amount: $110.00"
-convertCurrency(250, 0.85); // Expected output: "Converted Amount: $212.50"
-console.log(`Currency $${110}`);  // Results in $110
-console.log(`Currency $${212.50}`);  // Results in $212.50
