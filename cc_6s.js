@@ -1,18 +1,19 @@
 //Task 1 - Business Profit Calculation
 
-function calculateNetProfit(sellingPrice, costPrice, unitsSold) {
-    return (sellingPrice - costPrice) *unitsSold;
+function calculateProfit(sellingPrice1, costPrice1, unitsSold1) {
+    return (sellingPrice1 - costPrice1) *unitsSold1;
 }
 const sellingPrice1 = 20
 const costPrice1= 30
 const unitsSold1 = 100
+const profitAmount1=calculateProfit(20, 30, 100);
+console.log(`Profit: $${profitAmount1}`);  // Results in a profit of $1000
+
 const sellingPrice2 = 50
 const costPrice2= 70
 const unitsSold2 = 200
-calculateNetProfit1(20, 30, 100);
-calculateNetProfit(50, 70, 200);
-console.log(`Profit: $${1000}`);  // Results in a profit of $1000
-console.log(`Profit: $${4000}`);  // Results in a profit of $4000
+const profitAmount2=calculateProfit(50, 70, 200);
+console.log(`Profit: $${profitAmount2}`);  // Results in a profit of $4000
 
 // Task 2- Sales Tax Computation
 
