@@ -67,7 +67,23 @@ function calculateSubscriptionCost(plan, months, discount = 0) {
     }
 let subscriptionCost1= calculateSubscriptionCost("Basic", 6, 10); // Expected output: "Total Cost: $50"
 console.log(`Subscription Price 1: $${subscriptionCost1}`);  // Results in $50
+
 let subscriptionCost2= calculateSubscriptionCost ("Premium", 12, 0); // Expected output: "Total Cost: $240"
 console.log(`Subscription Price 2: $${subscriptionCost2}`);  // Results in $240
 
+//Task 5- Returning Values
+function convertCurrency(amount, exchangeRate) {
 
+    return (amount * exchangeRate).toFixed(2); 
+}
+const amount1 = 100
+const exchangeRate1 = 1.1;
+const Currency1 = convertCurrency(amount1, exchangeRate1)
+convertCurrency(100, 1.1); // Expected output: "Converted Amount: $110.00"
+console.log(`Currency1: $${Currency1}`); 
+
+const amount2 = 250
+const exchangeRate2 = 0.85;
+const Currency2 = convertCurrency(amount2, exchangeRate2)
+convertCurrency(250, 0.85); // Expected output: "Converted Amount: $212.50"
+console.log(`Currency2: $${Currency2}`)
