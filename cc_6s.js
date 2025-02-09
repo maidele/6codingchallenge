@@ -87,3 +87,16 @@ const exchangeRate2 = 0.85;
 const Currency2 = convertCurrency(amount2, exchangeRate2)
 convertCurrency(250, 0.85); // Expected output: "Converted Amount: $212.50"
 console.log(`Currency2: $${Currency2}`)
+
+//Task 6
+
+function applyBulkDiscount(orders, discountRate) {
+  return orders.map(order => discountRate(order));
+    }
+const orders = [200, 600, 1200, 450, 800];
+const discountRate = 0.9;
+const discountedOrders = applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount);
+console.log(discountedOrders);  // Expected output: [200, 540, 1080, 450, 720]
+
+
+
