@@ -35,16 +35,26 @@ console.log(`SalesTax: $${salesTax2}`); // Expected output: "Sales Tax: $50"
 
 // Task 3- Arrow Function
 
-calculateBonus = (salary, performanceRating) => salary * performanceRating;
-salary = 5000;
-performanceRating= "Excellent"// 20% bonus; 
-performanceRating="Good"// 10% of salary; 
-performanceRating= "Average"// 5% of salary
-calculateBonus(50000, "Excellent");
-calculateBonus(5000, "Excellent"); // Expected output: "Bonus: $1000"
-calculateBonus(7000, "Good");      // Expected output: "Bonus: $700"
-console.log(`Bonus: $${1000}`);  // Results in a Bonus of $1000
-console.log(`Bonus: $${700}`);  // Results in a Bonus of $700
+    const calculateBonus = (salary, performanceRating) => {
+
+    if (performanceRating === "Excellent") return salary * 0.2;
+    
+    if (performanceRating === "Good") return salary * 0.1;
+    
+    if (performanceRating === "Average") return salary * 0.05;
+    
+    };
+
+const salary1 = 5000
+const performanceRating1 = "Excellent"
+const calculateBonus1= calculateBonus(5000, "Excellent"); // Expected output: "Bonus: $1000"  
+console.log(`Bonus: $${calculateBonus1}`);  // Results in a Bonus of $1000
+
+const salary2 = 7000
+const performanceRating2 = "Good"
+const calculateBonus2= calculateBonus(7000, "Good"); // Expected output: "Bonus: $700"
+console.log(`Bonus: $${calculateBonus2}`);  // Results in a Bonus of $1000
+
 
 //Task 4- Subscription Pricing Model
 
@@ -67,5 +77,3 @@ convertCurrency(100, 1.1); // Expected output: "Converted Amount: $110.00"
 convertCurrency(250, 0.85); // Expected output: "Converted Amount: $212.50"
 console.log(`Currency $${110}`);  // Results in $110
 console.log(`Currency $${212.50}`);  // Results in $212.50
-
-//Task 6-
