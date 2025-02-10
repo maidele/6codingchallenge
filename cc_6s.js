@@ -98,5 +98,8 @@ const discountRate = 0.9;
 const discountedOrders = applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount);
 console.log(discountedOrders);  // Expected output: [200, 540, 1080, 450, 720]
 
+//Task 7
 
+ 
+      
 
